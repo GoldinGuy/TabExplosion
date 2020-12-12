@@ -1,7 +1,4 @@
-/**
- * Initialization
- * Sets up Local Storage if not done already
- */
+// intialize local storage and timer
 function init() {
 	chrome.storage.local.get(["date"], value => {
 		if (!value.date) {
@@ -18,7 +15,7 @@ function setFuse() {
 	if (now.getHours() >= 24) {
 		day += 1;
 	}
-	// '+' casts the date to a number, like [object Date].getTime();
+	// YYYY   MM   DD  HH MM SS MS
 	var timestamp = +new Date(
 		now.getFullYear(),
 		now.getMonth(),
@@ -28,7 +25,6 @@ function setFuse() {
 		0,
 		0
 	);
-	// YYYY   MM   DD  HH MM SS MS
 	chrome.alarms.create("ExplodeTabs", {
 		when: timestamp,
 		periodInMinutes: 1440 // 10080 one week
@@ -43,6 +39,8 @@ function triggerExplosion() {
 		});
 	});
 }
+
+// Tab Closing sourced from 
 
 /**
  * Close all tabs
