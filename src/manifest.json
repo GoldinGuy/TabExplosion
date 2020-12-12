@@ -3,7 +3,7 @@
 	"version": "1.0.1",
 	"author": "@GoldinGuy",
 	"manifest_version": 2,
-	"description": "Explodes your tabs at Midnight",
+	"description": "Explodes your tabs at midnight",
 	"background": {
 		"scripts": ["index.js", "background.js"],
 		"persistent": true
@@ -13,6 +13,7 @@
 		"default_popup": "popup/popup.html"
 	},
 	"permissions": ["activeTab", "tabs", "storage", "alarms"],
+	"content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
 	"icons": {
 		"128": "assets/icon.png"
 	}
