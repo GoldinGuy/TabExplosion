@@ -26,6 +26,6 @@ Then to test the app, enable `developer tools` in the Extension Options for your
 
 ## Meta
 
-Created by [@GoldinGuy](https://github.com/GoldinGuy), with credit to (@Pandawon)[https://github.com/Pandawan/CloseAllTabs], (@ChuckLeone)[https://github.com/ChuckLeone/canvas-explosion], and (@TobySmith)[https://github.com/tobysmith568/Confetti-Chrome-Extension] for their previous work in the area of tab & particle based chrome extensions
+Created by [@GoldinGuy](https://github.com/GoldinGuy), with credit to [@Pandawon](https://github.com/Pandawan/CloseAllTabs), [@ChuckLeone](https://github.com/ChuckLeone/canvas-explosion), and [@TobySmith](https://github.com/tobysmith568/Confetti-Chrome-Extension) for their previous work in the area of tab & particle based chrome extensions
 
 Distributed under the MIT license. See [LICENSE](https://github.com/GoldinGuy/TabExplosion/blob/master/LICENSE) for more information.

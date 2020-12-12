@@ -1,4 +1,4 @@
-// intialize local storage and timer
+// initialize local storage and timer
 function init() {
 	chrome.storage.local.get(["date"], value => {
 		if (!value.date) {
@@ -47,17 +47,12 @@ function triggerExplosion() {
  *  Whether or not to only remove from the current window
  */
 function closeAllTabs(currentTab, currentWindow) {
-	// Get current tab
 	chrome.tabs.getSelected(selected => {
-		// If currentWindow, do it if not, get from all (no options)
 		let options = currentWindow ? { currentWindow: true } : {};
-		// Get every tab
 		chrome.tabs.query(options, tabs => {
-			// Loop through each tab
+			// Loop through and remove each tab
 			tabs.forEach(tab => {
-				// If also removing current tab OR this isn't the current tab
 				if (currentTab || selected.id !== tab.id) {
-					// Remove it
 					chrome.tabs.remove(tab.id);
 				}
 			});
