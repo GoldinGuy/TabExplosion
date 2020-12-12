@@ -1,0 +1,22 @@
+{
+	"name": "tab-explosion",
+	"version": "1.0.2",
+	"description": "As @backlon says, Friday is \"that day.\" All your tabs self-destruct at midnight. Only with this chrome extension, that actually happens, and with a cool explosion too...",
+	"main": "index.js",
+	"scripts": {
+		"zip": "bestzip build.zip src/*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GoldinGuy/TabExplosion.git"
+	},
+	"author": "@GoldinGuy",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/GoldinGuy/TabExplosion/issues"
+	},
+	"homepage": "https://github.com/GoldinGuy/TabExplosion#readme",
+	"devDependencies": {
+		"bestzip": "^2.1.7"
+	}
+}
