@@ -18,18 +18,5 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 });
 
 function closeTabs() {
-	closeAll(true, false);
+	closeAllTabs(true, false);
 }
-
-// // Keyboard Shortcuts
-// chrome.commands.onCommand.addListener(function (command) {
-// 	if (command === "explodeTabs") {
-// 		closeAll(true, false);
-// 	}
-// });
-
-// chrome.browserAction.onClicked.addListener(function (tab) {
-// 	chrome.tabs.executeScript(tab.ib, {
-// 		file: "inject.js"
-// 	});
-// });

@@ -18,9 +18,9 @@ function explodeTabsWithStyle() {
 	// alert("It's Midnight!\nYou know what that means...\n\nKABOOM!!!");
 	chrome.extension.getBackgroundPage().console.log("trigger explosion");
 	triggerExplosion();
-	// setTimeout(closeTabs, 4000);
+	setTimeout(closeTabs, 4000);
 }
 
 function closeTabs() {
-	closeAll(true, false);
+	closeAllTabs(true, false);
 }
